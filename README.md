@@ -5,9 +5,9 @@ start a wifi hotspot. In theory the hotspot could be set up via the
 networkmanager alone but for some reason it did not work for all devices. It
 worked fine for an Android phone but not for an iPad. There is quite some
 information about configuring hotspots on the internet but not so much about
-how to play nice with the networkmanager and firewalld services. So the script to
-start the hotspot here uses the `nmcli` and `firewalld` commands to set up the
-hotspot.
+how to play nice with the networkmanager and firewalld services. So this script
+to start the hotspot uses the `nmcli` and `firewalld-cmd` commands to set up
+the hotspot.
 
 To create a hotspot, the `hostapd` and `dnsmasq` packages have to be installed.
 The configuration of both daemons in `/etc/hostapd/hostapd.conf`,
